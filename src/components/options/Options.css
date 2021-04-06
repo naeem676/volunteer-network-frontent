@@ -1,0 +1,23 @@
+.options-main{
+    width: 25%;
+    height: 60vh;
+    float: left;
+}
+.options-img{
+    width: 300px;
+}
+.h4{
+    transform: translate(00%, -100%);
+    width: 250px;
+    color: white;
+    text-align: center;
+    background-color: royalblue;
+    padding: 13px 25px;
+}
+.options-div{
+    margin: 20px;
+    display: flex;
+    width: 40%;
+    
+    
+}
