@@ -29,7 +29,7 @@ const VolunteerOption = () => {
         <div>
         {/* <button onClick={handlePost}>post</button> */}
 
-        
+
         {
             options.map( opt => <Options options={opt} key={opt._id}></Options>)
         }
