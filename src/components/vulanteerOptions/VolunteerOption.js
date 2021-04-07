@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 // import fakeData from '../fakedata/FakeData';
 import Options from '../options/Options';
+import './VolunteerOption.css'
 
 
 const VolunteerOption = () => {
@@ -26,7 +27,7 @@ const VolunteerOption = () => {
    
     
     return (
-        <div>
+        <div className='volunteer'>
         {/* <button onClick={handlePost}>post</button> */}
 
 

@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { useHistory } from 'react-router-dom';
+import { SelectContext } from '../../App';
 import './Options.css';
 
 const Options = (props) => {
-    const {name, photo, key} = props.options;
+    const [selected, setSelected] = useContext(SelectContext);
+    const {name, photo} = props.options;
+    const history = useHistory();
 
    const handleAdd = (id)=>{
         fetch('http://localhost:4000/addOption/' + id)
         .then(res => res.json())
-        .then(data => console.log(data))
-        // console.log(id)
+        .then(data => {
+            setSelected(data)
+            history.push('/register')
+        })
+        
+       
    }
 
     return (

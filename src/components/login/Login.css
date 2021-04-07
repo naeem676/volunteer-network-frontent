@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+.login{
+    font-family: 'Kiwi Maru', serif;
+    background-color: whitesmoke;
+    justify-content: center;
+    text-align: center;
+    padding: 200px;
+}
+.btn-div{
+    width: 400px;
+    height: 400px;
+    border: 1px solid gray;
+    
+    transform: translate(60%, -20%);
+}
+.google-btn{
+    width: 60%;
+    height: 8vh;
+    margin-top: 150px;
+    font-size: large;
+    display: flex;
+    margin-left: 90px;
+    border-radius: 10px;
+    border:1px solid gray;
+    
+    
+}
+.google-btn:hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+.google-logo{
+    width: 10%;
+   transform: translate(30%, 40%);
+    
+}
+.h3{
+    transform: translate(30%, -17%);
+}

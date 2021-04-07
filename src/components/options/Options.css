@@ -21,3 +21,10 @@
     
     
 }
+.options-div:hover{
+    cursor: pointer;
+}
+.options-div:active{
+    color: salmon;
+    transform: translate(00%, -20%);
+}

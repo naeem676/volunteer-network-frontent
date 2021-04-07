@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+
+.selected{
+    font-family: 'Kiwi Maru', serif;
+    background-color: whitesmoke;
+    padding: 20px 0;
+}
+.selected-logo{
+    width: 30%;
+}
+.selected-nav{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.selected-item{
+    display:flex;
+    justify-content:space-around;
+}
+.selected-p{
+    margin-right: 40px;
+}

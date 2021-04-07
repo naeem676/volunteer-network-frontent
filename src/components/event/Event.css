@@ -1,0 +1,31 @@
+.event-img{
+    width: 150px;
+    height: 150px;
+}
+.event-main{
+    width: 500px;
+    height: 25vh;
+    background-color: white;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 70px;
+    padding: 30px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    
+}
+.event{
+    width: 650px;
+    height: 45vh;
+    float: left;
+    
+
+}
+.event-text{
+    margin-left: 20px;
+}
+.event-btn{
+    margin-left: 100px;
+    margin-top: 130px;
+    
+}
