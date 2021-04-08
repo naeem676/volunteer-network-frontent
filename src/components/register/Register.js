@@ -2,15 +2,15 @@ import React, { useContext, useState } from 'react';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import { Dialog } from '@material-ui/core';
 import './Register.css';
 import { SelectContext, UserContext } from '../../App';
+import { useHistory } from 'react-router-dom';
 
 const Register = () => {
     const [loggedUser, setLoggedUser] = useContext(UserContext);
     const [selected, setSelected] = useContext(SelectContext);
+    const history = useHistory();
    const [user, setUser] = useState({name:loggedUser.displayName, email:loggedUser.email, date:'', description:'', organization:selected.name});
     
     const handleOnBlur = e =>{
@@ -22,6 +22,7 @@ const Register = () => {
     }
     
     const handleSubmit = e => {
+        
         const newUser = {...user};
         const event = {...newUser, photo:selected.photo}
         fetch('http://localhost:4000/addEvent', {
@@ -32,7 +33,7 @@ const Register = () => {
         .then(res => res.json())
         .then(data => {
             if(data){
-                alert('data loaded')
+                history.push('/event')
             }
         })
         

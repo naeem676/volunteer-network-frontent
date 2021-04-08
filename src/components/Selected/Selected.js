@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from "../logos/Group 1329.png";
 import './Selected.css'
 
@@ -8,7 +9,7 @@ const Selected = () => {
         <nav className="selected-nav">
                 <div><img className="selected-logo" src={logo} alt="" srcset=""/></div>
                 <div className="selected-item">
-                <p className="selected-p">Home</p>
+                <Link style={{textDecoration:'none'}} to='/home'><p className="selected-p">Home</p></Link>
                 <p className="selected-p">Donation</p>
                 <p className="selected-p">Event</p>
                 <p className="selected-p">Blog</p>

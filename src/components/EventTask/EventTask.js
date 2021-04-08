@@ -9,13 +9,13 @@ const EventTask = () => {
         fetch('http://localhost:4000/eventTask')
         .then(res => res.json())
         .then(data => setEvent(data))
-    },[])
+    },[event])
     return (
         <div className="event-task">
         <Selected></Selected>
 
         {
-               event.map( task => <Event task={task} key={task._id}></Event>)
+               event.map( task => <Event task={task} key={task._id} ></Event>)
         }
         
 

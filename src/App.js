@@ -5,6 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import './App.css';
+import Admin from "./components/admin/Admin";
 import EventTask from "./components/EventTask/EventTask";
 import Header from './components/header/Header';
 import Login from "./components/login/Login";
@@ -45,6 +46,9 @@ function App() {
         <PrivateRoute path='/register'>
           <Register></Register>
         </PrivateRoute>
+        <Route path='/admin'>
+          <Admin></Admin>
+        </Route>
         <Route path='*'>
           <Nomatch></Nomatch>
         </Route>

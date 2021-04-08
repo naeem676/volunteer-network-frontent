@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+.admin{
+    font-family: 'Kiwi Maru', serif;
+}
+.admin-main{
+    display: flex;
+    margin: 20px;
+    float: left;
+    
+}
+.admin-logo{
+    width: 80%;
+}
+.admin-left{
+   width: 200px;
+}
+.admin-right{
+    margin-left: 20px;
+
+}
+.users-logo{
+    width:7%
+}
+.plus-logo{
+    width: 7%;
+}
+.left-div{
+    margin-top: 10px;
+    width: 250px;
+}
+.add-link{
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 80px;
+    color: black !important;
+}
+.list-colum{
+    display: flex;
+    background-color: whitesmoke;
+    padding-right: 80px;
+    border-radius: 10px;
+    
+}
+.colum-name{
+    margin-left: 100px;
+}
+.colum-p{
+    margin-left: 150px;
+}
+.colum-volunteer{
+    margin-left: 140px;
+    width: 150px;
+}
+.colum-action{
+    margin-left: 150px;
+}

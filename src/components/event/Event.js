@@ -3,6 +3,8 @@ import './Event.css';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
@@ -13,9 +15,16 @@ const useStyles = makeStyles((theme) => ({
 
 const Event = (props) => {
     const classes = useStyles();
-    const {photo, organization, date} = props.task
+   
+   
+    const task = props.task
+    const {photo, organization, date} = task
     const handleDelete = (id) => {
-         console.log(id)
+         fetch('http://localhost:4000/delete/' + id, {
+           method:"DELETE"
+         })
+         
+         
     }
     return (
         <div className="event">
@@ -26,7 +35,7 @@ const Event = (props) => {
                   <p>{date}</p>
               </div>
               <div className="event-btn">
-              <div className={classes.root}><Button onClick={()=>handleDelete(props.task._id)} variant="outlined">Cancel</Button></div>
+              <div className={classes.root}><Button onClick={()=>handleDelete(task._id)} variant="outlined">Cancel</Button></div>
               </div>
           </div>
 

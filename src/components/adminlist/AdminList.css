@@ -1,0 +1,26 @@
+.trash-logo{
+    background-color: red;
+    width: 20px;
+}
+.trash-logo:hover{
+    cursor: pointer;
+}
+.admin-list{
+    display: flex;
+}
+.admin-name{
+    
+    margin-left: 90px;
+    width: 100px;
+}
+.admin-email{
+    margin-left: 40px;
+    width: 220px;
+}
+.admin-date{
+    margin-left: 40px;
+    width: 180px;
+}
+.admin-organization{
+     width: 320px;
+}
