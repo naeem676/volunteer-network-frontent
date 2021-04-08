@@ -12,7 +12,7 @@ const Admin = () => {
         fetch('http://localhost:4000/allAdmin')
         .then(res => res.json())
         .then(data => setAllAdmin(data))
-    }, [])
+    }, [allAdmin])
     return (
         <div className="admin">
             <div className="admin-main">

@@ -1,8 +1,14 @@
+
 import React from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import logo from "../logos/Group 1329.png";
 import './Header.css'
 
 const Header = () => {
+    const history = useHistory();
+    const handleAdmin = ()=>{
+        history.push('/admin')
+    }
     return (
         <div className="header">
             <nav className="header-nav">
@@ -13,7 +19,9 @@ const Header = () => {
                 <p className="item-p">Event</p>
                 <p className="item-p">Blog</p>
                 <button className="btn-register">Register</button>
-                <button className="btn-admin">Admin</button></div>
+                
+                <button onClick={handleAdmin} className="btn-admin">Admin</button>
+                </div>
             </nav>
             <div className="header-main">
                 <h1> I GROW BY HELPING PEOPLE IN NEED.</h1>

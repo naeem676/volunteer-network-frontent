@@ -24,17 +24,30 @@ const Login = () => {
 
     const handleGoogle = ()=>{
         firebase.auth()
-  .signInWithPopup(googleProvider)
-  .then((result) => {
-    /** @type {firebase.auth.OAuthCredential} */
-    
-    const user = result.user;
-    setLoggedUser(user)
-    history.replace(from);
-   
-  }).catch((error) => {
-    
-  });
+        .signInWithPopup(googleProvider)
+        .then((result) => {
+          /** @type {firebase.auth.OAuthCredential} */
+          
+          const user = result.user;
+          setLoggedUser(user)
+          handleToken()
+          
+        
+        }).catch((error) => {
+          
+        });
+    }
+    const handleToken = ()=>{
+      firebase.auth().currentUser.getIdToken(/* forceRefresh */ true)
+      .then(function(idToken) {
+        console.log(idToken)
+
+       sessionStorage.setItem('token', idToken)
+        history.replace(from);
+      }).catch(function(error) {
+        // Handle error
+      });
+      
     }
     
     return (

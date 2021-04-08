@@ -5,7 +5,7 @@ import './AdminList.css';
 const AdminList = (props) => {
     const {name, email, organization, date} = props.admin;
     const adminDelete = (id) =>{
-        fetch('http://localhost:4000/adminDelete' + id,{
+        fetch('http://localhost:4000/delete/' + id,{
             method:"DELETE"
         })
     }
