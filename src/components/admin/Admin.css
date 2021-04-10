@@ -29,10 +29,11 @@
     width: 250px;
 }
 .add-link{
-    text-decoration: none;
+   
     margin-top: 10px;
     margin-left: 80px;
-    color: black !important;
+    
+    
 }
 .list-colum{
     display: flex;
@@ -53,4 +54,26 @@
 }
 .colum-action{
     margin-left: 150px;
+}
+.event-link{
+    margin-left: 70px;
+}
+.form-area{
+    margin:20px;
+    padding: 40px;
+    background-color: whitesmoke;
+}
+.form-div{
+    background-color: white;
+    margin: 30px;
+    padding: 20px;
+}
+.input{
+    margin: 50px;
+}
+.from-main{
+    display: flex;
+}
+.add-btn{
+   margin-left: 550px;
 }

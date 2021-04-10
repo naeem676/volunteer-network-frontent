@@ -5,6 +5,7 @@ import Selected from '../Selected/Selected';
 import './EventTask.css';
 
 const EventTask = () => {
+   
     const [loggedUser, setLoggedUser]= useContext(UserContext);
     const [event, setEvent] = useState([])
     useEffect(()=>{
